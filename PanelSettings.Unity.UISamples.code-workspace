@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": false,
+		},
+		"editor.autoClosingBrackets": "never",
+        "editor.detectIndentation": false,
+		"editor.insertSpaces": false,
+		"explorer.compactFolders": false,
+		"workbench.editor.pinnedTabsOnSeparateRow": true
+	}
+}
