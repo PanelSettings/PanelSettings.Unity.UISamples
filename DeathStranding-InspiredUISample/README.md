@@ -1,4 +1,4 @@
-# PanelSettings UI Samples
+# PanelSettings Death Stranding-Inspired UI Sample
 
 More to come...
 
