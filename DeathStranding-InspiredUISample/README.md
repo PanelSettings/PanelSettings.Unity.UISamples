@@ -1,9 +1,30 @@
 # PanelSettings Death Stranding-Inspired UI Sample
 
+## Intro
+
 This project partially recreates the basic flow and layout of 3 screens from Death Stranding in Unity, with UI Toolkit, and the transitions between them:
 1. the in-game menu
 2. the Map screen
 3. the Cargo screen
+
+## Packages
+
+- `com.unity.ide.visualstudio`
+- `com.unity.inputsystem`
+
+## Project Settings
+
+- Editor > Enter Play Mode Settings:
+	- When entering Play Mode: **Do not reload Domain or Scene**
+- Player > Other Settings:
+	- Active Input Handling*: **Both**
+- UI Toolkit:
+	- Text:
+		- Advanced Text Generator: **ENABLED**
+	- UI Toolkit:
+		- Enable Event Debugger: **ENABLED**
+		- Enable Layout Debugger: **ENABLED**
+		- Enable World Space Rendering: **ENABLED**
 
 ## Disclaimer
 
