@@ -1,6 +1,9 @@
 # PanelSettings Death Stranding-Inspired UI Sample
 
-More to come...
+This project partially recreates the basic flow and layout of 3 screens from Death Stranding in Unity, with UI Toolkit, and the transitions between them:
+1. the in-game menu
+2. the Map screen
+3. the Cargo screen
 
 ## Disclaimer
 
