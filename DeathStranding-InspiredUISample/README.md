@@ -12,19 +12,27 @@ This project partially recreates the basic flow and layout of 3 screens from Dea
 - `com.unity.ide.visualstudio`
 - `com.unity.inputsystem`
 
-## Project Settings
+## Settings
 
-- Editor > Enter Play Mode Settings:
-	- When entering Play Mode: **Do not reload Domain or Scene**
-- Player > Other Settings:
-	- Active Input Handling*: **Both**
-- UI Toolkit:
-	- Text:
-		- Advanced Text Generator: **ENABLED**
+- Project Settings
+	- Editor > Enter Play Mode Settings:
+		- When entering Play Mode: **Do not reload Domain or Scene**
+	- Player > Other Settings:
+		- Active Input Handling*: **Both**
 	- UI Toolkit:
-		- Enable Event Debugger: **ENABLED**
-		- Enable Layout Debugger: **ENABLED**
-		- Enable World Space Rendering: **ENABLED**
+		- Text:
+			- Advanced Text Generator: **ENABLED**
+		- UI Toolkit:
+			- Enable Event Debugger: **ENABLED**
+			- Enable Layout Debugger: **ENABLED**
+			- Enable World Space Rendering: **ENABLED**
+- UI Builder Settings
+	- Hierarchy `...` Menu:
+		- Class List: **ENABLED**
+		- Attached StyleSheets: **ENABLED**
+	- Library `...` Menu:
+		- Tree View: **ENABLED**
+		- Default Visual Element Type: **No styles**
 
 ## Disclaimer
 
