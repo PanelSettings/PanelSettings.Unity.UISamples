@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Button data-source-type="PanelSettings.DeathStranding.MenuData+MenuItem, Assembly-CSharp">
+        <Bindings>
+            <ui:DataBinding property="text" binding-mode="ToTarget" />
+            <ui:DataBinding property="iconImage" binding-mode="ToTarget" />
+        </Bindings>
+    </ui:Button>
+</ui:UXML>
