@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.panelsettings.uitoolkit": {
-      "version": "file:../../Packages/com.panelsettings.uitoolkit",
+      "version": "file:../../../Packages/com.panelsettings.uitoolkit",
       "depth": 0,
       "source": "local",
       "dependencies": {}

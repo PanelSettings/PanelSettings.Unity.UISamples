@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.panelsettings.uitoolkit": "file:../../Packages/com.panelsettings.uitoolkit",
+    "com.panelsettings.uitoolkit": "file:../../../Packages/com.panelsettings.uitoolkit",
     "com.unity.ide.visualstudio": "2.0.22",
     "com.unity.inputsystem": "1.13.1",
     "com.unity.modules.accessibility": "1.0.0",
