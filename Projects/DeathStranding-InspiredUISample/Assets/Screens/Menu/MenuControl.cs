@@ -3,41 +3,43 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-[UxmlElement]
-public partial class MenuControl : VisualElement {
+namespace PanelSettings.DeathStranding {
 
-	VisualElement firstButton;
-	VisualElement selectedButton;
-	List< VisualElement > buttonList;
+	[UxmlElement]
+	public partial class MenuControl : VisualElement {
 
-	public MenuControl() {
-		RegisterCallbackOnce< GeometryChangedEvent >( FirstFrameInit );
-	}
+		VisualElement firstButton;
+		List< VisualElement > buttonList;
 
-	void FirstFrameInit( GeometryChangedEvent evt ) {
-		if ( childCount == 0 )
-			return;
-
-		var children = Children();
-
-		firstButton = children.First();
-		selectedButton = firstButton;
-
-		buttonList = new List<VisualElement>();
-		buttonList.AddRange( Children() );
-
-		foreach ( var button in buttonList ) {
-			button.RegisterCallback< ClickEvent >( ButtonClick );
+		public MenuControl() {
+			RegisterCallbackOnce< GeometryChangedEvent >( FirstFrameInit );
 		}
 
-		firstButton.Focus();
-	}
+		void FirstFrameInit( GeometryChangedEvent evt ) {
+			if ( childCount == 0 )
+				return;
 
-	void ButtonClick( ClickEvent evt ) {
-		var button = evt.target as VisualElement;
-		var offset = firstButton.resolvedStyle.marginTop - button.layout.yMin;
+			var children = Children();
 
-		style.translate = new Vector3( 0f, offset, 0f );
+			firstButton = children.First();
+
+			buttonList = new List<VisualElement>();
+			buttonList.AddRange( Children() );
+
+			foreach ( var button in buttonList ) {
+				button.RegisterCallback< ClickEvent >( ButtonClick );
+			}
+
+			firstButton.Focus();
+		}
+
+		void ButtonClick( ClickEvent evt ) {
+			var button = evt.target as VisualElement;
+			var offset = firstButton.resolvedStyle.marginTop - button.layout.yMin;
+
+			style.translate = new Vector3( 0f, offset, 0f );
+		}
+
 	}
 
 }
